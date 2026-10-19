@@ -22,11 +22,11 @@ public class Appointment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(mappedBy = "doctor", fetch = FetchType.EAGER)
     @NotNull(message = "Doctor cannot be null")
     private Doctor doctor;
 
-    @ManyToOne
+    @ManyToOne(mappedBy = "patient", fetch = FetchType.EAGER)
     @NotNull(message = "Patient cannot be null")
     private Patient patient;
 

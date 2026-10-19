@@ -1,5 +1,5 @@
 /* This is the style sheet for global change across the files. */
-
+/* in  src/main/resources/static/assets/css/style.css*/
 /* style.css */
 .header {
     display: flex;
@@ -181,7 +181,11 @@
     border-radius: 10px;
     width: 400px;
     position: relative;
-  }
+    
+    /* 🛠️ Add these two lines to make the modal scrollable when content is long */
+    max-height: 85vh;
+    overflow-y: auto;
+}
   
   .modal-content h2{
     font-size: 32px;

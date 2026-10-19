@@ -1,6 +1,6 @@
 /* This is the style sheet for the patientDashboard.html */
 /* in  src/main/resources/static/assets/css/patientDashboard.css*/
-.card-actions {
+  .card-actions {
     background-color: #244557;
     padding: 10px;
     text-align: center;
